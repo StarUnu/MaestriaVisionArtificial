@@ -10,8 +10,18 @@ Ventajas del Transformer (ViT):Captura relaciones globales en la imagen. Modelo 
 # CNN <br>
 Test loss: 0.025131383910775185<br>
 Test accuracy: 99.10%
-# Transofrmador
+# Transformador
 Test accuracy:98.4%
+## Resultados con la base de datos Cifar <br>
+# CNN <br>
+Test loss: 0.024599900469183922<br>
+Test accuracy: 0.9922000169754028<br>
+# Transformador
+Test accuracy: 34.72%<br>
+Test top 5 accuracy: 65.04%<br>
+## Conclusiones
+MNIST: Ambos modelos funcionan excelente, pero las CNN mantienen una ligera ventaja.
 
+CIFAR: Las CNN dominan claramente. Si el Transformador no fue adaptado especialmente para visión por computador (ViT, DeiT, etc.), es normal que su rendimiento sea mucho menor.
 
-En conclución el CNN es eficiente para pocos datos, menor necesidad de cómputo y memoria. Mientras que el transformador entiende el contexto de la imagen,grado de paralelización durante el entrenamiento y no depende de la estructura espacial fija de la imagen.
+Asimismo la CNN es eficiente para pocos datos, menor necesidad de cómputo y memoria. Mientras que el transformador entiende el contexto de la imagen,grado de paralelización durante el entrenamiento y no depende de la estructura espacial fija de la imagen.
